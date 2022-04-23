@@ -1,1 +1,70 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~sanitize.css";
+@import "~sanitize.css/assets.css";
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+:root {
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --Grayish-cyan: hsl(184, 14%, 56%);
+  --Lightgrayish-cyan: hsl(185, 41%, 84%);
+  --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--Lightgrayish-cyan);
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  color: var(--Dark-grayish-cyan);
+  font-size: 18px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+button {
+  color: var(--White);
+  background-color: var(--Very-dark-cyan);
+  border: none;
+  font-size: 1.5rem;
+  font-family: 'Space Mono', monospace;
+  padding: .5rem .7rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--Lightgrayish-cyan);
+  color: var(--Very-dark-cyan);
+}
+
+button:active {
+  background-color: hsl(172, 67%, 45%);
+  color: var(--Very-dark-cyan);
+  outline: none;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.active {
+  background-color: hsl(172, 67%, 45%);
+  color: var(--Very-dark-cyan);
+  outline: none;
+}
+
+
